@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import UseRefExample1Highlight from '../highlight/UseRefExample1Highlight';
 
 function UseRefExample1() {
   const inputRef = useRef();
@@ -13,7 +14,9 @@ function UseRefExample1() {
   };
 
   return (
-    <div>
+   <>
+
+    <div className='margingHighlight'>
       <form onSubmit={onSubmit}>
         <label htmlFor="name">Name</label>
         <input
@@ -28,8 +31,11 @@ function UseRefExample1() {
         <p onClick={() => inputRef.current.focus()} ref={paraRef}>
           Hello
         </p>
-      </form>
+      </form>  
     </div>
+    <UseRefExample1Highlight/>
+   </>
+
   );
 }
 

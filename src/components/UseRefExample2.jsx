@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-
+import UseRefExample2Highlight from '../highlight/UseRefExample2Highlight'
 function UseRefExample2() {
   const [name, setName] = useState('')
 
@@ -13,7 +13,9 @@ function UseRefExample2() {
   }, [name])
 
   return (
-    <div>
+     <>
+    
+    <div className='margingHighlight'>
       <h1>Renders: {renders.current}</h1>
       <h2>Prev Name State: {prevName.current}</h2>
       <input
@@ -23,6 +25,9 @@ function UseRefExample2() {
         className='form-control mb-3'
       />
     </div>
+      <UseRefExample2Highlight/>
+   
+     </>
   )
 }
 

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
+import UseMemoExampleHighlighit from '../highlight/UseMemoExampleHighlighit'
 
 function useMemoExample() {
   const [number, setNumber] = useState(1)
@@ -21,7 +22,8 @@ function useMemoExample() {
   }
 
   return (
-    <div>
+    <>
+     <div className='margingHighlight'>
       <input
         type='number'
         value={number}
@@ -39,6 +41,8 @@ function useMemoExample() {
 
       <h3>Renders: {renders.current}</h3>
     </div>
+       <UseMemoExampleHighlighit/>
+    </>
   )
 }
 

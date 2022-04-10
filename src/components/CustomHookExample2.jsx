@@ -1,3 +1,4 @@
+import CustomHookExample2Highlighit from '../highlight/CustomHookExample2Highlighit'
 import useLocalStorage from '../hooks/useLocalStorage'
 
 function CustomHookExample2() {
@@ -22,6 +23,8 @@ function CustomHookExample2() {
 
   return (
     <>
+
+    <div className='margingHighlight'>
       <form onSubmit={onSubmit} className='w-50'>
         <div className='mb-3'>
           <label className='form-label'>Task</label>
@@ -42,6 +45,8 @@ function CustomHookExample2() {
       {tasks.map((task) => (
         <h3 key={task.date}>{task.task}</h3>
       ))}
+    </div>
+    <CustomHookExample2Highlighit/>
     </>
   )
 }
