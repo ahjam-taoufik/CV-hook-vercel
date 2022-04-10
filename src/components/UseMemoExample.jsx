@@ -5,7 +5,7 @@ function useMemoExample() {
   const [number, setNumber] = useState(1)
   const [incriment, setInc] = useState(0)
 
-  // const sqrt = getSqrt(number)
+  
   const sqrt = useMemo(() => getSqrt(number), [number])
 
   const renders = useRef(1)
@@ -20,6 +20,7 @@ function useMemoExample() {
       return prevState + 1
     })
   }
+   console.log(incriment);
 
   return (
     <>

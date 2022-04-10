@@ -9,12 +9,12 @@ function useFetch(url, options) {
     const fetchData = async () => {
       try {
         const response = await fetch(url, options)
-        const data = await response.json()
+        const data1 = await response.json()
 
-        setData(data)
+        setData(data1)
         setLoading(false)
-      } catch (error) {
-        setError(error)
+      } catch (error1) {
+        setError(error1)
         setLoading(false)
       }
     }

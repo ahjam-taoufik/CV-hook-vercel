@@ -42,8 +42,8 @@ function CustomHookExample2() {
 
       <hr />
 
-      {tasks.map((task) => (
-        <h3 key={task.date}>{task.task}</h3>
+      {tasks.map((item) => (
+        <h3 key={item.date}>{item.task}</h3>
       ))}
     </div>
     <CustomHookExample2Highlighit/>
