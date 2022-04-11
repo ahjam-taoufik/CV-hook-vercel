@@ -10,7 +10,7 @@ function useLocalStorage(key, initialValue) {
     const valueToStore =
       value instanceof Function ? value(localStorageValue) : value
     // Set to state
-    setLocalStorageValue(value)
+    setLocalStorageValue(value)   
     // Set to local storage
     localStorage.setItem(key, JSON.stringify(valueToStore))
   }

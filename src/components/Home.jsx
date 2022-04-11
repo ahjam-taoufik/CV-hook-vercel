@@ -47,6 +47,13 @@ function Home() {
         >
           Custom Hook - useLocalStorage()
         </Link>
+
+        <Link
+          className='list-group-item list-group-item-action'
+          to='usetoggle'
+        >
+          Custom Hook - useToggleHook()
+        </Link>
       </ul>
     </>
   )
