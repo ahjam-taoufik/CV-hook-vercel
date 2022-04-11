@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=ahjam-taoufik_CV-hook-vercel)](https://sonarcloud.io/summary/new_code?id=ahjam-taoufik_CV-hook-vercel)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
